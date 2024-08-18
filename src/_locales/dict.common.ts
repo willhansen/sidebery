@@ -197,7 +197,7 @@ export const commonTranslations: Translations = {
   },
   'panel.history.req_perm': {
     en: 'History panel requires "History" permission.',
-    de: 'Chronik Panel erfordert "Chronik" Berechtigung',
+    de: 'Chronik-Panel erfordert "Chronik" Berechtigung',
     hu: 'Az előzmények eléréséhez engedély szükséges.',
     pl: 'Panel historii wymaga pozwolenia "Historia".',
     ru: 'Панель истории требует разрешения "История".',
@@ -402,7 +402,7 @@ export const commonTranslations: Translations = {
   },
   'popup.new_tab_shortcuts.new_shortcut_container_label': {
     en: 'Container',
-    de: 'Behälter',
+    de: 'Umgebung',
     hu: 'Konténer',
     pl: 'Kontener',
     ru: 'Контейнер',
@@ -411,7 +411,7 @@ export const commonTranslations: Translations = {
   },
   'popup.new_tab_shortcuts.new_shortcut_default_container': {
     en: 'Default container',
-    de: 'Standard-Behälter',
+    de: 'Standardumgebung',
     hu: 'Alapértelmezett konténer',
     pl: 'Domyślny kontener',
     ru: 'Стандартный контейнер',
@@ -457,7 +457,7 @@ export const commonTranslations: Translations = {
 
   'popup.tab_move_rules.title': {
     en: 'Tab auto-move rules',
-    de: 'Tab Auto-Move Regeln',
+    de: 'Regeln für das automatische Verschieben von Tabs',
     hu: 'A lapok automatikus áthelyezésének szabályai',
     pl: 'Zasady automatycznych przesunięć kart',
     ru: 'Правила автоматического перемещения вкладок',
@@ -496,7 +496,7 @@ export const commonTranslations: Translations = {
   },
   'popup.tab_move_rules.rule_container_label': {
     en: 'If tab is in a container',
-    de: 'Wenn Tab in einem Behälter ist',
+    de: 'Wenn Tab in einer Umgebung ist',
     hu: 'Ha a lap egy konténerben van',
     pl: 'Jeśli karta jest w kontenerze',
     ru: 'Если вкладка в контейнере',
@@ -506,7 +506,7 @@ export const commonTranslations: Translations = {
   },
   'popup.tab_move_rules.rule_url_label': {
     en: 'If tab has URL ("substring" or "/RegExp/")',
-    de: 'Wenn Tab URL hat ("substring" oder "/RegExp/")',
+    de: 'Wenn Tab URL hat ("Zeichenkette" oder "/RegExp/")',
     hu: 'Ha az URL illeszkedik ("szövegrészlet" vagy /RegExp/)',
     pl: 'Jeśli karta ma URL ("substring" or "/RegExp/")',
     ru: 'Если вкладка имеет URL-адрес ("подстрока" или "/RegExp/")',
@@ -555,7 +555,7 @@ export const commonTranslations: Translations = {
 
   'popup.tab_reopen_rules.title': {
     en: 'Tab reopening rules',
-    de: 'Regeln für die Wiedereröffnung der Registerkarte',
+    de: 'Regeln für die Wiedereröffnung von Tabs',
     hu: 'Lap újranyitásának szabályai',
     pl: 'Zasady ponownego otwarcia karty',
     ru: 'Правила',
@@ -565,7 +565,7 @@ export const commonTranslations: Translations = {
   },
   'popup.tab_reopen_rules.enable_label': {
     en: 'Enable listed rules',
-    de: 'Aktivieren Sie die aufgeführten Regeln',
+    de: 'Aktiviere aufgeführte Regeln',
     hu: 'A szabályok engedélyezése',
     pl: 'Włącz wyszczególnione zasady',
     ru: 'Включить перечисленные правила',
@@ -634,7 +634,7 @@ export const commonTranslations: Translations = {
   },
   'popup.tab_reopen_rules.rule_url_label': {
     en: 'If tab has URL ("substring" or "/RegExp/")',
-    de: 'Wenn Tab URL hat ("substring" oder "/RegExp/")',
+    de: 'Wenn Tab URL hat ("Zeichenkette" oder "/RegExp/")',
     hu: 'Ha az URL illeszkedik ("szövegrészlet" vagy /RegExp/)',
     pl: 'Jeśli karta ma URL ("substring" or /"RegExp/")',
     ru: 'Если вкладка имеет URL-адрес ("подстрока" или "/RegExp/")',
@@ -644,7 +644,7 @@ export const commonTranslations: Translations = {
   },
   'popup.tab_reopen_rules.rule_suffix_include': {
     en: n => `...reopen it in "${n}" container`,
-    de: n => `...in "${n}" Behälter wieder öffnen`,
+    de: n => `...in "${n}" Umgebung wieder öffnen`,
     hu: n => `…újranyitás ebben a konténerben: ${n}`,
     pl: n => `...otwórz ponownie w kontenrze "${n}"`,
     ru: n => `...открыть ee в контейнере "${n}"`,
@@ -654,7 +654,7 @@ export const commonTranslations: Translations = {
   },
   'popup.tab_reopen_rules.rule_suffix_exclude': {
     en: n => `...and it is in "${n}" container, reopen it in default container.`,
-    de: n => `...und es ist in "${n}" Behälter, öffnen Sie es in Standardbehälter.`,
+    de: n => `...und in "${n}" Umgebung ist, öffne in Standardumgebung.`,
     hu: n => `…és a jelenlegi konténere „${n}”, akkor újranyitás az alapértelmezett konténerben.`,
     pl: n => `...i jest w kontenerze "${n}", otwórz w domyślnym kontenerze.`,
     ru: n => `...и она находится в контейнере "${n}", открыть ее в контейнере по умолчанию.`,
@@ -714,7 +714,7 @@ export const commonTranslations: Translations = {
   },
   'popup.url_rules.custom_match_placeholder': {
     en: '"substring" or "/RegExp/"',
-    de: '"substring" oder "/RegExp/"',
+    de: '"Zeichenkette" oder "/RegExp/"',
     hu: '"szövegrészlet" vagy /RegExp/',
     pl: '"substring" lub "/RegExp/"',
     ru: '"подстрока" или "/RegExp/"',
@@ -723,7 +723,7 @@ export const commonTranslations: Translations = {
   },
   'popup.url_rules.reopen_label': {
     en: 'Reopen these tabs in container:',
-    de: 'Diese Tabs in Behälter wieder öffnen:',
+    de: 'Diese Tabs in Umgebung wieder öffnen:',
     hu: 'Újranyitás konténerben:',
     pl: 'Otwórz ponownie te karty w kontenerze:',
     ru: 'Открывать эти вкладки в контейнере:',
@@ -798,6 +798,7 @@ export const commonTranslations: Translations = {
   },
   'menu.new_tab_bar.manage_shortcuts': {
     en: 'Manage Shortcuts',
+    de: 'Verwalte Verknüpfungen',
     hu: 'Parancsikonok kezelése',
     pl: 'Zarządzaj skrótami',
     ru: 'Управление ярлыками',
@@ -827,7 +828,7 @@ export const commonTranslations: Translations = {
   },
   'menu.bookmark.open_in_new_window': {
     en: 'Open in new normal window',
-    de: 'Öffnen in neuem normalem Fenster',
+    de: 'Öffnen in neuem normalen Fenster',
     hu: 'Megnyitás itt: új ablak',
     pl: 'Otwórz w nowym normalnym oknie',
     ru: 'Открыть в новом стандартном окне',
@@ -837,7 +838,7 @@ export const commonTranslations: Translations = {
   },
   'menu.bookmark.open_in_new_priv_window': {
     en: 'Open in new private window',
-    de: 'Öffnen in neuem privatem Fenster',
+    de: 'Öffnen in neuem privaten Fenster',
     hu: 'Megnyitás itt: új privát ablak',
     pl: 'Otwórz w nowym prywatnym oknie',
     ru: 'Открыть в новом приватном окне',
@@ -1357,6 +1358,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.colorize_': {
     en: 'Set color',
+    de: 'Farbe festlegen',
     hu: 'Színbeállítás',
     pl: 'Ustaw kolor',
     ru: 'Задать цвет',
@@ -1366,6 +1368,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.colorize_colors': {
     en: 'Color...',
+    de: 'Farbe...',
     hu: 'Szín…',
     pl: 'Kolor...',
     ru: 'Цвет...',
@@ -1544,6 +1547,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.edit_title': {
     en: 'Edit title',
+    de: 'Titel bearbeiten',
     hu: 'Cím szerkesztése',
     pl: 'Edytuj tytuł',
     ru: 'Редактировать заголовок',
@@ -1573,6 +1577,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.url_conf': {
     en: 'Configure site...',
+    de: 'Seite konfigurieren...',
     hu: 'Webhelybeállítások…',
     pl: 'Konfiguruj stronę...',
     ru: 'Настроить сайт...',
@@ -1601,6 +1606,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.open_in_ctr_': {
     en: 'Open in container...',
+    de: 'Öffne in Umgebung...',
     hu: 'Megnyitás itt: konténer…',
     pl: 'Otwórz w kontenerze...',
     ru: 'Открыть в контейнере...',
@@ -1610,6 +1616,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.open_in_default_container': {
     en: 'Open in default container',
+    de: 'Öffne in Standardumgebung',
     hu: 'Megnyitás itt: alapértelmezett konténer',
     pl: 'Otwórz w domyślnym kontenerze',
     ru: 'Открыть в новом контейнере',
@@ -1619,6 +1626,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.open_in_': {
     en: 'Open in ',
+    de: 'Öffne in ',
     hu: 'Megnyitás itt: ',
     pl: 'Otwórz w ',
     ru: 'Открыть в ',
@@ -1628,7 +1636,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tab.close_descendants': {
     en: 'Close descendants',
-    de: 'Abkömmlinge schließen',
+    de: 'Untergeordnete schließen',
     hu: 'Utódlapok bezárása',
     pl: 'Zamknij następne',
     ru: 'Закрыть потомки',
@@ -1709,7 +1717,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tabs_panel.sort_all_sub_menu_name': {
     en: 'Sort all tabs',
-    de: 'Sortieren Sie alle Tabs',
+    de: 'Sortiere alle Tabs',
     hu: 'Minden lap rendezése',
     pl: 'Sortuj wszystkie karty',
     ru: 'Сортировать все вкладки',
@@ -1719,7 +1727,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tabs_panel.sort_all_by_title_asc': {
     en: 'Sort all tabs by title (A-z)',
-    de: 'Sortieren Sie alle Tabs nach Titel (A-z)',
+    de: 'Sortiere alle Tabs nach Titel (A-z)',
     hu: 'Minden lap rendezése: cím szerint (A–z)',
     pl: 'Sortuj wszystkie karty po tytule (A-z)',
     ru: 'Сортировать все вкладки по названию (А-я)',
@@ -1729,7 +1737,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tabs_panel.sort_all_by_title_des': {
     en: 'Sort all tabs by title (z-A)',
-    de: 'Sortieren Sie alle Tabs nach Titel (z-A)',
+    de: 'Sortiere alle Tabs nach Titel (z-A)',
     hu: 'Minden lap rendezése: cím szerint (z–A)',
     pl: 'Sortuj wszystkie karty po tytule (z-A)',
     ru: 'Сортировать все вкладки по названию (я-А)',
@@ -1739,7 +1747,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tabs_panel.sort_all_by_url_asc': {
     en: 'Sort all tabs by URL (A-z)',
-    de: 'Sortieren Sie alle Tabs nach URL (A-z)',
+    de: 'Sortiere alle Tabs nach URL (A-z)',
     hu: 'Minden lap rendezése: URL szerint (A–z)',
     pl: 'Sortuj wszystkie karty po URL (A-z)',
     ru: 'Сортировать все вкладки по URL (А-я)',
@@ -1749,7 +1757,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tabs_panel.sort_all_by_url_des': {
     en: 'Sort all tabs by URL (z-A)',
-    de: 'Sortieren Sie alle Tabs nach URL (z-A)',
+    de: 'Sortiere alle Tabs nach URL (z-A)',
     hu: 'Minden lap rendezése: URL szerint (z–A)',
     pl: 'Sortuj wszystkie karty po URL (z-A)',
     ru: 'Сортировать все вкладки по URL (я-А)',
@@ -1759,7 +1767,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tabs_panel.sort_all_by_time_asc': {
     en: 'Sort all tabs by access time (Old-Recent)',
-    de: 'Sortieren Sie alle Tabs nach Zugriffszeit (Alt-Neu)',
+    de: 'Sortiere alle Tabs nach Zugriffszeit (Alt-Neu)',
     hu: 'Minden lap rendezése: idő szerint (régi–új)',
     pl: 'Sortuj wszystkie karty po dacie (Stare-Nowe)',
     ru: 'Сортировать все вкладки по времени доступа (Старые-Новые)',
@@ -1769,7 +1777,7 @@ export const commonTranslations: Translations = {
   },
   'menu.tabs_panel.sort_all_by_time_des': {
     en: 'Sort all tabs by access time (Recent-Old)',
-    de: 'Sortieren Sie alle Tabs nach Zugriffszeit (Neu-Alt)',
+    de: 'Sortiere alle Tabs nach Zugriffszeit (Neu-Alt)',
     hu: 'Minden lap rendezése: idő szerint (új–régi)',
     pl: 'Sortuj wszystkie karty po dacie (Nowe-Stare)',
     ru: 'Сортировать все вкладки по времени доступа (Новые-Старые)',
@@ -2582,7 +2590,7 @@ export const commonTranslations: Translations = {
   },
   'upgrade.fav_cache': {
     en: 'Favicons cache',
-    de: 'Favicons Cache',
+    de: 'Favicons Zwischenspeicher',
     hu: 'Webhelyikonok gyorsítótára',
     pl: 'Favicons cache',
     ru: 'Кэш иконок',
@@ -2612,7 +2620,7 @@ export const commonTranslations: Translations = {
   },
   'upgrade.data_ready_note': {
     en: 'You can save a backup and continue',
-    de: 'Sie können ein Backup speichern und fortfahren',
+    de: 'Sie können eine Sicherung speichern und fortfahren',
     hu: 'A folytatás előtt készíthető egy biztonsági mentés',
     pl: 'Możesz zapisać kopię zapasową i kontynuować',
     ru: 'Вы можете сохранить резервную копию и продолжить',
@@ -2682,7 +2690,7 @@ export const commonTranslations: Translations = {
   },
   'upgrade.err.finish': {
     en: 'Sidebery is unable to finish the upgrade. Try to manually remove the old version of Sidebery, reload the browser and install the new version of Sidebery.',
-    de: 'Sidebery kann das Upgrade nicht abschließen. Versuchen Sie, die alte Version von Sidebery manuell zu entfernen, den Browser neu zu laden und die neue Version von Sidebery zu installieren.',
+    de: 'Sidebery kann die Aktualisierung nicht abschließen. Versuchen Sie, die alte Version von Sidebery manuell zu entfernen, den Browser neu zu laden und die neue Version von Sidebery zu installieren.',
     hu: 'Nem sikerült befejezni a frissítést. Meg kell próbálni eltávolítani a Sidebery korábbi verzióját, majd a böngésző újraindítása után telepíteni az új verziót.',
     pl: 'Sidebery nie było w stanie ukończyć tej aktualizacji. Spróbuj ręcznie usunąć starą wersję Sidebery, przeładować przeglądarkę i zainstalować nową wersję Sidebery.',
     ru: 'Sidebery не может завершить обновление. Попробуйте вручную удалить старую версию Sidebery, перезагрузить браузер и установить новую версию Sidebery.',
