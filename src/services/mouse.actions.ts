@@ -313,9 +313,15 @@ export function getWheelDebouncer(
     if (wheelYIsBlocked && direction === WheelDirection.Vertical) return
     if (wheelXIsBlocked && direction === WheelDirection.Horizontal) return
 
+    // The value of e.deltaX/Y depend on whether e.deltaMode was accessed or not.
+    // If we access e.deltaX/Y before e.deltaMode we get `px`, otherwise it might be
+    // `line` or `px` which in its turn depend on whether the element is overflowed or
+    // not (which is probably a different Firefox bug, TODO: check and report it).
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=1814084
+    delta = direction === WheelDirection.Vertical ? e.deltaY : e.deltaX
+
     if (e.deltaMode !== 0) return cb(e)
 
-    delta = direction === WheelDirection.Vertical ? e.deltaY : e.deltaX
     if (accumulation) {
       if (!first && delta) deltaBuf += delta
       else first = false
@@ -330,6 +336,8 @@ export function getWheelDebouncer(
         delta = 0
       }
       cb(e)
+    } else {
+      e.preventDefault()
     }
   }
 }
