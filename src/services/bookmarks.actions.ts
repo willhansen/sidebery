@@ -329,7 +329,11 @@ export async function open(
 
   const dstContainerId = dst.containerId ?? CONTAINER_ID
   let dstPanel: Panel | undefined
+
+  // Use defined panel
   if (dst.panelId !== undefined) dstPanel = Sidebar.panelsById[dst.panelId]
+
+  // Or check move rules by container to get the dst panel
   if (!Utils.isTabsPanel(dstPanel)) {
     let dstCtxTabsPanel: TabsPanel | undefined
     for (const rule of Tabs.moveRules) {
@@ -343,24 +347,22 @@ export async function open(
     }
     dstPanel = dstCtxTabsPanel
   }
-  if (!dstPanel) {
-    let dstTabsPanel: TabsPanel | undefined
-    for (const p of Sidebar.panels) {
-      if (Utils.isTabsPanel(p)) {
-        dstTabsPanel = p
-        break
-      }
-    }
-    dstPanel = dstTabsPanel
+
+  // Or use the last active tabs panel
+  if (!Utils.isTabsPanel(dstPanel)) {
+    dstPanel = Sidebar.panelsById[Sidebar.getRecentTabsPanelId()]
   }
+
   if (Utils.isTabsPanel(dstPanel)) {
     if (dstPanel.newTabCtx && dstPanel.newTabCtx !== 'none' && !dst.containerId) {
       dst.containerId = dstPanel.newTabCtx
     }
     if (dst.index === undefined) {
-      dst.index = dstPanel?.nextTabIndex ?? Tabs.list.length
+      dst.index = dstPanel.nextTabIndex ?? Tabs.list.length
     }
-    if (!dst.panelId && dstPanel) dst.panelId = dstPanel.id
+    dst.panelId = dstPanel.id
+  } else {
+    return
   }
 
   const toOpen: ItemInfo[] = []
