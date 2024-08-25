@@ -175,12 +175,14 @@ async function injectTabPreview(tabId: ID, y?: number) {
 
 function getTabPreviewInitData(tabId: ID, y?: number): TabPreviewInitData {
   const tab = Tabs.byId[tabId]
+  const isFrameDark = Styles.reactive.frameColorScheme === 'dark'
+  const isToolbarDark = Styles.reactive.toolbarColorScheme === 'dark'
 
   return {
-    bg: Styles.parsedTheme?.vars.frame_bg,
-    fg: Styles.parsedTheme?.vars.frame_fg,
-    hbg: Styles.parsedTheme?.vars.toolbar_bg,
-    hfg: Styles.parsedTheme?.vars.toolbar_fg,
+    bg: Styles.parsedTheme?.vars.frame_bg ?? (isFrameDark ? '#282828' : '#eaeaea'),
+    fg: Styles.parsedTheme?.vars.frame_fg ?? (isFrameDark ? '#ccc' : '#222'),
+    hbg: Styles.parsedTheme?.vars.toolbar_bg ?? (isToolbarDark ? '#323232' : '#fafafa'),
+    hfg: Styles.parsedTheme?.vars.toolbar_fg ?? (isToolbarDark ? '#eee' : '#111'),
     tabId: tabId,
     winId: Windows.id,
     title: tab?.title ?? '---',
