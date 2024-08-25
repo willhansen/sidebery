@@ -463,8 +463,7 @@ function onKeySelect(dir: number): void {
     }
 
     if (!target) {
-      if (dir > 0) target = tabs.findLast(t => !t.invisible)
-      else target = tabs[0]
+      target = dir > 0 ? tabs[0] : tabs.findLast(t => !t.invisible)
       if (!target) return
     }
 
