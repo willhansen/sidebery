@@ -26,6 +26,9 @@ export function start(info: DragInfo, dstType?: DropType): void {
 
   lastDragStartTime = Date.now()
 
+  // Disable auto-switching active panel on mouseleave
+  if (Sidebar.switchOnMouseLeave) Sidebar.switchOnMouseLeave = false
+
   if (
     (info.type === DragType.Tabs || info.type === DragType.TabsPanel) &&
     info.windowId === Windows.id &&
