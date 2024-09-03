@@ -291,6 +291,7 @@ function onTabCreated(nativeTab: NativeTab, attached?: boolean): void {
   // Check if tab should be reopened in different container
   if (
     !attached &&
+    !reopenedTabInfo &&
     tab.cookieStoreId === DEFAULT_CONTAINER_ID &&
     panel &&
     panel.newTabCtx !== 'none'
