@@ -280,7 +280,7 @@ function onTabCreated(nativeTab: NativeTab, attached?: boolean): void {
   tab.internal = tab.url.startsWith(ADDON_HOST)
   if (tab.internal) tab.isGroup = Utils.isGroupUrl(tab.url)
   tab.index = index
-  tab.parentId = Settings.state.tabsTree ? tab.openerTabId ?? NOID : NOID
+  tab.parentId = Settings.state.tabsTree ? (tab.openerTabId ?? NOID) : NOID
   if (!tab.favIconUrl && !tab.internal && !tab.url.startsWith('a')) {
     tab.reactive.favIconUrl = tab.favIconUrl = Favicons.getFavicon(tab.url)
   }
