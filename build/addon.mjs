@@ -125,13 +125,10 @@ async function main() {
       return
     }
 
-    execSync(
-      'npx web-ext sign --use-submission-api --channel unlisted --source-dir ./addon -a ./dist/ -i __tests__',
-      {
-        encoding: 'utf-8',
-        stdio: 'inherit',
-      }
-    )
+    execSync('npx web-ext sign --channel unlisted --source-dir ./addon -a ./dist/ -i __tests__', {
+      encoding: 'utf-8',
+      stdio: 'inherit',
+    })
   }
 }
 
